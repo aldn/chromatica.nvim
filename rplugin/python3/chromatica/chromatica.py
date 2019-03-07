@@ -94,9 +94,9 @@ class Chromatica(logger.LoggingMixin):
         self.info("g:chromatica#search_source_args=%d" \
                 % self.__vim.vars["chromatica#search_source_args"])
         self.info("-------------------------------------")
-        clang_verbose_info = util.get_clang_include_path(self.library_path).decode()
-        for line in clang_verbose_info.split("\n"):
-            self.info(line)
+        #  clang_verbose_info = util.get_clang_include_path(self.library_path).decode()
+        #  for line in clang_verbose_info.split("\n"):
+        #      self.info(line)
         self.info("-------------------------------------")
 
     def get_unsaved_buffer(self, filename):
